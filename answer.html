@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+-->
+</head>
+
+<body style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #f5f5f5; font-family: Monospace; ">
+  <style>
+    #back:hover {
+      cursor: pointer;
+    }
+  </style>
+
+  <form>
+    <input type="button" id="back" value="Go back!" onclick="history.back()">
+  </form>
+
+  <h1>
+  <pre>{{ joey }}</pre>
+  <pre>{{ lines }}</pre>
+  </h1>
+  <hr>
+<!--
+  <h1>
+  <pre>{{ moto }}</pre>
+  <pre>{{ cards }}</pre>
+  </h1>
+  <hr>
+  <h1>
+  <pre>{{ yugi }}</pre>
+  <pre>{{ deck }}</pre>
+  </h1>
+  <hr>
+-->
+  <img src="{{url_for('static', filename='graph.png')}}" alt="The graph!"> 
+</body>
+</html>

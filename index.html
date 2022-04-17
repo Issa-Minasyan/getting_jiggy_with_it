@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <style>
+        body {
+            background: linear-gradient(to right, #a73737, #7a2828);
+        }
+        #submit {
+                    
+            text-align: center;
+            width: 100px;
+            height: 40px;
+        }
+        h1 {
+            font-family: monospace;
+            font-size: 2.2em;
+            text-align: center;
+            color: #f5f5f5;"
+        }
+        #submit:hover {
+            cursor: pointer;
+            background-color: #f5f5f5;
+        }
+        input {
+            width: 500px;
+            height: 30px;
+            text-align: left;
+        }
+        input:focus {
+            border: solid black;
+            outline: none;
+        }
+        label {
+            color: white;
+        }
+        form {
+            text-align: center;
+        }
+        pre {
+            color: white;
+        }
+    </style>
+
+    <h1>Find Z-effective</h1>
+
+    <form method="POST" action="#">
+        <label>Mixture:</label><br>
+        <input type="text" name="mix" placeholder="example// 90H2O+10NaCl" required><br><br>
+        <label>Energies (in MeV):</label><br>
+        <input type="text" name="energy" placeholder="example// 0.2 0.3 0.4 0.5 0.6" required><br><br>
+        <input type="submit" value="Submit" id="submit" multiple>
+    </form>
+
+    <br><br><br>
+    <hr>
+    <pre>***Note!
+        Only the following energies are accepted:
+        [0.001, 0.0015, 0.002, 0.003, 0.004, 0.005, 0.006, 0.008,
+        0.01, 0.015, 0.02, 0.03, 0.04, 0.05, 0.06, 0.08,
+        0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8,
+        1, 1.022, 1.25, 1.5, 2, 2.044, 3, 4, 5, 6, 7, 8, 9,
+        10, 11, 12, 13, 14, 15, 16, 18,
+        20, 22, 24, 26, 28,
+        30, 40, 50, 60, 80,
+        100, 150, 200, 300, 400, 500, 600, 800,
+        1000, 1500, 2000, 3000, 4000, 5000, 6000, 8000,
+        10000, 15000, 20000, 30000, 40000, 50000, 60000, 80000, 100000] in MeV units</pre>
+
+</body>
+</html>
